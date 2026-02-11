@@ -1,0 +1,17 @@
+@"
+# IntelliJ
+.idea/
+*.iml
+
+# Maven/Gradle
+target/
+.mvn/
+*.class
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+"@ | Out-File -Encoding utf8 .gitignore
