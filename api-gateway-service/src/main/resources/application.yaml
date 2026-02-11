@@ -1,3 +1,15 @@
 spring:
   application:
     name: api-gateway-service
+server:
+  port: 8080
+
+services:
+  auth: http://auth-service:8081
+  profile: http://profile-service:8082
+  notification: http://notification-service:8083
+  file: http://file-service:8084
+
+gateway:
+  webclient:
+    timeout-seconds: 3

@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: profile-service
+    server:
+      port: 8082
