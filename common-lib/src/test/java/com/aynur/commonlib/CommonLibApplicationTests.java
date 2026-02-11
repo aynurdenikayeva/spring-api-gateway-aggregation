@@ -1,4 +1,4 @@
-package com.aynur.common_lib;
+package com.aynur.commonlib;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

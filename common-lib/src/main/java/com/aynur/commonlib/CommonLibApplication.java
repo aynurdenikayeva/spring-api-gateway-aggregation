@@ -1,4 +1,4 @@
-package com.aynur.common_lib;
+package com.aynur.commonlib;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
