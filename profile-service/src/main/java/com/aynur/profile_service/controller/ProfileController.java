@@ -7,14 +7,18 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/profiles")
 public class ProfileController {
+
     private final ProfileService service;
+
     public ProfileController(ProfileService service) {
         this.service = service;
     }
+
     @GetMapping("/me")
     public ProfileDto getMyProfile() {
         return service.getMyProfile();
     }
+
     @PutMapping("/me")
     public ProfileDto updateMyProfile(@RequestBody ProfileDto dto) {
         return service.updateMyProfile(dto);
