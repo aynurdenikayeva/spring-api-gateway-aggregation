@@ -1,5 +1,40 @@
+server:
+  port: 8084
+
 spring:
   application:
     name: file-service
-server:
-  port: 8084
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/file_db
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+app:
+  storage:
+    root: ./data/uploads
+
+  files:
+    max-size-bytes: 10485760   # 10MB
+
+
